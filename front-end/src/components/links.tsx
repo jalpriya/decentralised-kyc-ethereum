@@ -7,6 +7,11 @@ import { Role } from "../repository";
 import { BiDownArrow } from "react-icons/bi";
 import { FiUpload } from "react-icons/fi";
 import { Pressable } from "react-native";
+
+const dashBoard = () => {
+  console.log("Dashboard");
+}
+
 export function Links() {
   const navigate = useNavigate();
   const {
@@ -22,15 +27,8 @@ export function Links() {
       space={"5"}
       alignItems={"center"}
       mr="5"
-    >
-      <NavLink
-        className={(navData) => (navData.isActive ? "link-active" : "link")}
-        to="/dashboard"
-      >
-        <Text color="white" fontSize="lg">
-          Dashboard
-        </Text>
-      </NavLink>
+    > 
+      <h1 onClick={dashBoard}>Dashboard</h1>
       <Link
         mx="4"
         my={["4", "0"]}

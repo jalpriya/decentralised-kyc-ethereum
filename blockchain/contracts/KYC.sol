@@ -14,7 +14,7 @@ import "./Banks.sol";
 
 /**
  * @title KYC
- * @author Suresh Konakanchi
+ * @author Jalpriya Nikita Butani
  * @dev Library for managing KYC process seemlessly using de-centralised system
  */
 contract KYC is Customers, Banks {
